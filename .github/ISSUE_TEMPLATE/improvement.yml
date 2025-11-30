@@ -1,0 +1,31 @@
+name: "🛠 Improvement"
+description: Suggest an improvement to an existing feature
+labels: ["improvement"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected Area
+      options:
+        - Platform
+        - SDK
+        - Admin
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Improvement Summary
+      placeholder: What should be enhanced?
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: Why This Matters
+      placeholder: Impact, performance gain, DX improvement?
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      placeholder: |
+        - [ ] clear, testable criteria

@@ -1,0 +1,30 @@
+name: "⚙️ Technical Task"
+description: Internal engineering work (refactor, infra, CI/CD)
+labels: ["tech-task"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      placeholder: Why is this technical work needed?
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      placeholder: Describe what needs to be done (code, deps, infra)
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      placeholder: Other tasks, systems, API changes
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      placeholder: |
+        - [ ] tests updated
+        - [ ] schema updated (if needed)
+        - [ ] documentation updated

@@ -1,0 +1,46 @@
+name: "🚀 Feature Request"
+description: Propose a new feature for SniptCart
+labels: ["feature"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Platform
+        - SDK
+        - Admin
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Feature Summary
+      placeholder: Example — Add subscription pause/resume API
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      placeholder: What user pain does this address?
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      placeholder: Describe your proposed implementation
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      placeholder: Optional — other possible approaches
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      placeholder: Design references, diagrams, links…

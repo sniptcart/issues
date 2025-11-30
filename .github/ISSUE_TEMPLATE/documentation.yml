@@ -1,0 +1,26 @@
+name: "📘 Documentation"
+description: Docs for Platform, Admin, or SDK
+labels: ["documentation"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Documentation Area
+      options:
+        - API
+        - SDK JS/TS
+        - SDK Mobile
+        - Admin
+        - Architecture
+        - Release Notes
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Documentation Summary
+      placeholder: What needs to be documented?
+
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Issues / APIs
